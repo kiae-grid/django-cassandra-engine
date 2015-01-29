@@ -24,7 +24,7 @@ def run_tests(foo, settings='settings', extra=(), test_builtin=False):
                       apps)
 
     print '\n============================\n' \
-          'Running tests with settings: {}\n' \
+          'Running tests with settings: {0}\n' \
           '============================\n'.format(settings)
     return execute(
         ['./manage.py', 'test', '--settings', settings] + list(extra) + apps)
